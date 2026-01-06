@@ -1,0 +1,161 @@
+.customer-layout {
+  display: flex;
+  background: #f6f8fb;
+}
+
+.customer-main {
+  flex: 1;
+}
+
+/* FIND SERVICE CARD */
+.find-service-card {
+  background: linear-gradient(135deg, #dbeaff, #edf4ff);
+  padding: 25px;
+  margin: 20px;
+  border-radius: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: transform 0.3s ease;
+}
+
+.find-service-card:hover {
+  transform: translateY(-3px);
+}
+
+.primary-btn {
+  background: #4f8cff;
+  color: #fff;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.primary-btn:hover {
+  background: #3a76e8;
+}
+
+/* GRID */
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+/* CARDS */
+.card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.03);
+}
+
+.list-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 15px 0;
+}
+
+.badge {
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+}
+
+.badge.awaitingpickup {
+  background: #fff3cd;
+  color: #856404;
+}
+
+.badge.claimed {
+  background: #d4edda;
+  color: #155724;
+}
+
+.balance {
+  margin: 15px 0;
+}
+
+.transaction {
+  margin: 10px 0;
+}
+
+.transaction.negative {
+  color: #e74c3c;
+}
+
+.transaction.positive {
+  color: #2ecc71;
+}
+
+.action-box {
+  background: #f9fafc;
+  padding: 12px;
+  border-radius: 10px;
+  margin: 10px 0;
+}
+
+.small-btn {
+  margin-top: 8px;
+  padding: 6px 12px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+}
+
+.small-btn.primary {
+  background: #4f8cff;
+  color: #fff;
+}
+
+.link {
+  color: #4f8cff;
+  cursor: pointer;
+}
+
+.center {
+  text-align: center;
+}
+
+.muted {
+  color: #888;
+}
+.dark-mode {
+  background-color: #0f172a;
+  color: #e5e7eb;
+}
+
+.dark-mode .card {
+  background: #020617;
+  color: #e5e7eb;
+}
+
+.dark-mode input,
+.dark-mode textarea,
+.dark-mode select {
+  background: #020617;
+  color: #e5e7eb;
+  border-color: #334155;
+}
+.donation-scroll {
+  max-height: 320px;
+  overflow-y: auto;
+  padding-right: 6px;
+}
+
+.donation-scroll::-webkit-scrollbar {
+  width: 6px;
+}
+
+.donation-scroll::-webkit-scrollbar-thumb {
+  background: #bbb;
+  border-radius: 6px;
+}
+
+.donation-scroll::-webkit-scrollbar-thumb:hover {
+  background: #888;
+}

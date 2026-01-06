@@ -1,0 +1,45 @@
+.profile-image-box {
+  margin-bottom: 20px;
+}
+
+.profile-img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 8px;
+}
+
+.profile-form {
+  max-width: 500px;
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  animation: fadeUp 0.6s ease;
+}
+
+.profile-form label {
+  display: block;
+  margin-top: 12px;
+  font-size: 14px;
+}
+
+.profile-form input,
+.profile-form textarea {
+  width: 100%;
+  padding: 8px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 13px;
+}
+
+.checkbox {
+  margin-top: 10px;
+  font-size: 13px;
+}
+
+.success-msg {
+  margin-top: 10px;
+  color: #27ae60;
+  font-size: 13px;
+}

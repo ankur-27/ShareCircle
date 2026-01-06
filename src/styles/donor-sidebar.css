@@ -1,0 +1,68 @@
+.donor-sidebar {
+  width: 230px;
+  min-height: 100vh;
+  background: linear-gradient(180deg, #0f2027, #203a43, #2c5364);
+  color: #fff;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.donor-logo {
+  text-align: center;
+  margin-bottom: 25px;
+  font-weight: 600;
+}
+
+.donor-sidebar nav a {
+  display: block;
+  padding: 10px 14px;
+  margin-bottom: 8px;
+  border-radius: 8px;
+  color: #dfe6e9;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+.donor-sidebar nav a:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.donor-sidebar nav a.active {
+  background: rgba(255, 255, 255, 0.2);
+  font-weight: 500;
+}
+
+.logout-btn {
+  margin-top: auto;
+  padding: 8px;
+  border: none;
+  border-radius: 6px;
+  background: #ff7675;
+  color: #fff;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.logout-btn:hover {
+  background: #d63031;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .donor-sidebar {
+    width: 100%;
+    min-height: auto;
+    flex-direction: row;
+    overflow-x: auto;
+  }
+
+  .donor-sidebar nav {
+    display: flex;
+    gap: 8px;
+  }
+
+  .logout-btn {
+    margin-top: 0;
+  }
+}

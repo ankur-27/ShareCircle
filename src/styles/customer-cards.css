@@ -1,0 +1,77 @@
+.page-title {
+  padding: 20px;
+}
+
+.card-grid {
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+.food-card {
+  background: #fff;
+  padding: 18px;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.04);
+  transition: transform 0.3s ease;
+}
+
+.food-card:hover {
+  transform: translateY(-4px);
+}
+
+.food-card h3 {
+  margin-bottom: 5px;
+}
+
+.qty {
+  font-weight: 600;
+}
+
+.timer {
+  font-size: 12px;
+  margin: 10px 0;
+}
+
+.primary-btn.small {
+  width: 100%;
+  padding: 8px;
+  font-size: 14px;
+}
+.badge.pending {
+  background: #fff3cd;
+  color: #856404;
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+}
+
+.badge.approved {
+  background: #d4edda;
+  color: #155724;
+}
+
+.badge.completed {
+  background: #cce5ff;
+  color: #004085;
+}
+
+.small-btn.danger {
+  margin-top: 10px;
+  background: #ffeded;
+  color: #c0392b;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.badge.open {
+  background: #fff3cd;
+  color: #856404;
+}
+
+.badge.resolved {
+  background: #d4edda;
+  color: #155724;
+}

@@ -1,0 +1,161 @@
+.dashboard {
+  display: flex;
+}
+
+.dashboard-main {
+  flex: 1;
+  padding: 25px;
+  background: #f6f8fa;
+  min-height: 100vh;
+}
+
+.welcome-text {
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+.welcome-text span {
+  color: #2c5364;
+}
+
+.donor-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.stat-card {
+  background: linear-gradient(135deg, #43cea2, #185a9d);
+  color: white;
+  padding: 15px;
+  border-radius: 12px;
+  font-size: 14px;
+  text-align: center;
+  animation: fadeUp 0.6s ease;
+}
+
+.section-title {
+  margin-bottom: 12px;
+}
+
+.donation-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.donation-card {
+  background: white;
+  padding: 14px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  animation: fadeUp 0.5s ease;
+}
+
+.status {
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+  color: white;
+}
+
+.status.available {
+  background: #27ae60;
+}
+
+.status.collected {
+  background: #2980b9;
+}
+
+.status.expired {
+  background: #c0392b;
+}
+
+.timer {
+  font-size: 12px;
+  color: #555;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .dashboard {
+    flex-direction: column;
+  }
+}
+.donation-form {
+  max-width: 520px;
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  animation: fadeUp 0.6s ease;
+}
+
+.donation-form label {
+  display: block;
+  margin-top: 12px;
+  font-size: 14px;
+}
+
+.donation-form input,
+.donation-form select,
+.donation-form textarea {
+  width: 100%;
+  padding: 9px;
+  margin-top: 5px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 13px;
+}
+
+.free-note {
+  margin-top: 12px;
+  font-size: 13px;
+  color: #c0392b;
+}
+
+.small-btn {
+  margin-top: 15px;
+  padding: 8px 14px;
+  font-size: 13px;
+}
+.small-btn.danger {
+  background: #e74c3c;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 6px 10px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.small-btn.danger:hover {
+  background: #c0392b;
+}
+.kyc-status {
+  margin-top: 20px;
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 14px;
+}
+.timer.clean {
+  font-size: 12px;
+  color: #555;
+  background: #f1f2f6;
+  padding: 4px 8px;
+  border-radius: 6px;
+}

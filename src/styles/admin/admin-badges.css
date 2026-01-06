@@ -1,0 +1,10 @@
+.status-badge {
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.status-badge.active { background: #d4edda; color: #155724; }
+.status-badge.blocked { background: #f8d7da; color: #721c24; }
+.status-badge.pending { background: #fff3cd; color: #856404; }

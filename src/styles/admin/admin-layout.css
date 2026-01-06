@@ -1,0 +1,63 @@
+/* MAIN ADMIN LAYOUT */
+.admin-main {
+  margin-left: 240px;
+  padding: 20px 30px;
+  min-height: 100vh;
+  background: #f5f7fa;
+}
+
+/* HEADER */
+.admin-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.admin-header h2 {
+  font-size: 22px;
+  font-weight: 600;
+  color: #222;
+}
+
+/* RIGHT SECTION */
+.admin-header-right {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.admin-search {
+  padding: 6px 10px;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  font-size: 13px;
+}
+
+/* PROFILE */
+.admin-profile {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: #fff;
+  padding: 6px 10px;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.05);
+}
+
+.admin-profile img {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+}
+
+.admin-name {
+  font-size: 13px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.admin-role {
+  font-size: 11px;
+  color: #777;
+}
